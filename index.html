@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/reset.css">
+    <title>Document</title>
+
+    <script>
+        let currentTheme = 'dark';
+    </script>
+</head>
+<body id="body" class="body_dark">
+    <div id="page_content" class="page_content page_content__dark">
+        <div class="menu">
+            <ul id="menu_container" class="menu-container menu-container__dark">
+                <li class="container-text2">Shop</li>
+                <li>Discover</li>
+                <li class="container-text">COMPANY</li>
+                <li><input type="text" id="container_search" class="container_search container_search__dark" placeholder="Search"></li>
+                <li>Cart</li>
+                <div class="nested-container">
+                    <!-- black-logo -->
+                    <!-- <li><img src="img/faceb.svg" alt="facebook-logo"></li>
+                    <li><img src="img/inst.svg" alt="instagram-logo"></li>
+                    <li><img src="img/heart.svg" alt="heart"></li>
+                    <li><img src="img/circle.svg" alt="circle"></li> -->
+                    <!-- white-logo -->
+                    <li><img id="facebook_logo" src="img/theme_dark/faceb_dark.svg" alt="facebook-logo"></li>
+                    <li><img id="instagram_logo" src="img/theme_dark/inst_dark.svg" alt="instagram-logo"></li>
+                    <li><img id="favorites" src="img/theme_dark/heart_dark.svg" alt="heart"></li>
+                    <li onclick="currentTheme = togglePageTheme(currentTheme)"><img id="toggle_theme" src="img/theme_dark/circle_dark.svg" alt="circle"></li>
+                </div>
+            </ul>
+        </div>
+        <div class="header-content">
+            <div class="header-photos">
+                <div id="photo_1" class="photo1 photo1__dark"></div>
+                <div id="photo_2" class="photo2 photo2__dark"></div>
+                <h1 id="header_photos_text" class="header_photos_text header_photos_text__dark">View</h1>
+            </div>
+            <div id="header_big_photo" class="header_big_photo header_big_photo__dark">
+                <div class="header-photos_text1">
+                    <div class="header-text" >ITEM</div>
+                    <div class="header-text" >PHOTO</div>
+                </div>
+            </div>
+            <div id="header_buttons" class="header_buttons header-buttons__dark">
+                <h1 class="buttons_title">ITEM NAME<br>$235.00</h1>
+                <div id="header_button1" class="header_button1 header_button1__dark">Personalise</div>
+                <div id="header_button2" class= "header_button2 header_button2__dark">
+                    <h1 id="header_button2_text" class="header_button2_text header_button2_text__dark">Add to Cart</h1> 
+                    <img class="header_plus" src="img//theme_light/plus.svg" alt="plus" width="25px" height="25px">
+                </div>
+                <h2 class="button_text">*Free delivery on all orders over USD $50<br>*Check availability in boutiques</h2>
+                <div id="header_button3" class="header_button3 header_button3__dark">
+                    <h2 class="header_button3_text">Material</h2>
+                    <img id="arrow" class="button3_arrow" src="img/theme_dark/arrow_dark.svg" alt="arrow">
+                </div>
+                <div id="header_button4" class="header_button4 header_button4__dark">
+                    <h2 class="header_button4_text">Dimensions</h2>
+                    <img id="arrow2" class="button4_arrow" src="img/theme_dark/arrow_dark.svg" alt="arrow">
+                </div>
+            </div>
+        </div>
+        <div class="lower_menu">
+            <ul class="lower_menu_container">
+                <div class="lower_menu_nested_container">
+                    <li id="lower_menu_element1" class="lower_menu_element1 lower_menu_element1__dark">Cart</li>
+                    <li id="lower_menu_element2" class="lower_menu_element2 lower_menu_elements__dark">Overview</li>
+                    <li id="lower_menu_element3" class="lower_menu_element3 lower_menu_elements__dark">Boutique</li>
+                    <li id="lower_menu_element4" class="lower_menu_element4 lower_menu_elements__dark">About Us</li>
+                    <li id="lower_menu_element5" class="lower_menu_element5 lower_menu_elements__dark">FAQ</li>
+                </div>
+                <li id="lower_menu_element6" class="lower_menu_element6 lower_menu_element6__dark">ITEM SECTION NAME</li>
+            </ul>
+        </div>
+    </div>
+
+    <script src="theme_toggle.js"></script>
+</body>
+</html>
